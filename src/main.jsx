@@ -7,7 +7,10 @@ import Products from "./page/products/Products.jsx";
 import AboutUs from "./page/about-us/AboutUs.jsx";
 import Layout from "./Components/layout/Layout.jsx";
 import ProductDetails from "./page/product-details/ProductDetails.jsx";
-import {ErrorNotFound} from "./Components/ErrorNotFound.jsx";
+
+import Register from "./page/auth/register/Register.jsx";
+import Login from "./page/auth/login/Login.jsx";
+import { ErrorNotFound } from "./Components/ErrorNotFound.jsx";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +35,14 @@ const router = createBrowserRouter([
         element: <ProductDetails />
       }
     ]
+  },
+  {
+    path: "/register",
+    element: <Register />
+  },
+  {
+    path: "/login",
+    element: <Login />
   }
   // {
   //   path: "/products",

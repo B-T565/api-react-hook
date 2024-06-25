@@ -50,7 +50,12 @@ export function NavbarComponent() {
         </span>
       </Navbar.Brand>
       <div className="flex md:order-2">
-        <Button>Get started</Button>
+        <Link as={Link} to={"/login"}>
+           <Button className="bg-blue-600 hover:bg-blue-500">Login</Button>
+        </Link>
+        <Link as={Link} to={"/register"}>
+          <Button className="ml-2">Register</Button>
+        </Link>
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse>
